@@ -1,6 +1,6 @@
 import telebot
 token = '5163401707:AAHqHabhzFXDz2gMFlrDZVabNEgHrO1UswY'
-bot = telebot.TeleBot(5163401707:AAHqHabhzFXDz2gMFlrDZVabNEgHrO1UswY)
+bot = telebot.TeleBot(token)
 @bot.message_handler(content_types=["text"])
 def repeat_all_message(message):
     bot.send_message(message.chat.id, message.text)
