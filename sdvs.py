@@ -13,7 +13,7 @@ def button_message(message):
     item1=types.KeyboardButton("Кнопка")
     markup.add(item1)
     bot.send_message(message.chat.id,'Ну да', reply_markup=markup)
-    item2=types.KeyboardButton("Кнопочка")
+    item2=types.KeyboardButton
     markup.add(item1)
     bot.send_message(message.chat.id,'Ага', reply_markup=markup)
 
