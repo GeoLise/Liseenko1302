@@ -18,7 +18,7 @@ def button_message(message):
 @bot.message_handler(content_types='text')
 def message_reply(message):
     if message.text=="Кнопка":
-        bot.send_photo(message.chat.id, photo=open('img/ph.jpg', 'rb'))
+        bot.send_photo(message.chat.id, photo=open('vze2.jpg', 'rb'))
         
 if __name__ == '__main__':
      bot.infinity_polling()
