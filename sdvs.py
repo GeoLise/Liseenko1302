@@ -8,7 +8,7 @@ def start(message):
     markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1=types.KeyboardButton("Кнопка")
     item2=types.KeyboardButton("Кнопка2")
-    markp.add(item1, item2)
+    markup.add(item1, item2)
     bot.send_message(message.chat.id, text="Привет, {0.first_name}! Я тестовый бот".format(message.from_user), reply_markup=markup)
 
 @bot.message_handler(content_types='text')
