@@ -19,7 +19,7 @@ def message_reply(message):
     if message.text=="Кнопка2":
         bot.send_message(message.chat.id, "vk.com/goshkazavr")
 
-@bot.message_handler(commands=['игра'])
+@bot.message_handler(commands=['game'])
 def game(message):
     if message.text=="Игра":
         bot.send_message(message.chat.id, "игра началась")
