@@ -10,7 +10,7 @@ def start(message):
     item1=types.KeyboardButton("Кнопка")
     item2=types.KeyboardButton("Кнопка2")
     markp.add(item1, item2)
-    reply_markup=markup
+    bot.send_message(message.chat.id, text="Привет, {0.first_name}! Я тестовый бот".format(message.from_user), reply_markup=markup)
 
 @bot.message_handler(content_types='text')
 def message_reply(message):
