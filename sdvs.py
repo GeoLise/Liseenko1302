@@ -3,7 +3,7 @@ from telebot import types
 token = '5163401707:AAHqHabhzFXDz2gMFlrDZVabNEgHrO1UswY'
 bot = telebot.TeleBot(token)
 
-@bot.message_handler(commands=["start"])
+@bot.message_handler(commands=['start'])
 def start(message):
     markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1=types.KeyboardButton("Кнопка")
