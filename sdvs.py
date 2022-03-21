@@ -4,12 +4,13 @@ token = '5163401707:AAHqHabhzFXDz2gMFlrDZVabNEgHrO1UswY'
 bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=["start"])
-def start_message(message):
+def start(message):
     bot.send_message(message.chat.id,text="Привет, {0.first_name}!".format(message.from_user))
     markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1=types.KeyboardButton("Кнопка")
     item2=types.KeyboardButton("Кнопка2")
-    markup.add(item1, item2)                 
+    markp.add(item1, item2)
+    reply_markup=markup
 
 @bot.message_handler(content_types='text')
 def message_reply(message):
