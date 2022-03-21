@@ -18,8 +18,8 @@ def message_reply(message):
         bot.send_photo(message.chat.id, photo=open('vze2.jpg', 'rb'))
     if message.text=="Кнопка2":
         bot.send_message(message.chat.id, "vk.com/goshkazavr")
- def game(message):
-    if message.text=="Игра":
-        bot.send_message(message.chat.id, "игра началась")
+# def game(message):
+ #   if message.text=="Игра":
+  #      bot.send_message(message.chat.id, "игра началась")
 if __name__ == '__main__':
      bot.infinity_polling()       
