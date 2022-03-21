@@ -5,7 +5,6 @@ bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=["start"])
 def start(message):
-    bot.send_message(message.chat.id,text="Привет, {0.first_name}!".format(message.from_user))
     markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1=types.KeyboardButton("Кнопка")
     item2=types.KeyboardButton("Кнопка2")
